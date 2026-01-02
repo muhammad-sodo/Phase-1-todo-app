@@ -1,55 +1,44 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report:
+Version change: N/A → 1.0.0
+Added sections: All principles and sections for AI-Generated Technical Book project
+Removed sections: None (new constitution)
+Templates requiring updates: N/A (new project)
+Follow-up TODOs: None
+-->
+# AI-Generated Technical Book with Integrated RAG Chatbot Constitution
+
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Accuracy & Verifiability
+All content and responses must be grounded in verified sources from the book; Zero hallucination tolerance; All claims must be verifiable and traceable to specific sections of the book
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### AI-Native, Retrieval-Optimized Writing
+Content must be structured for optimal vector retrieval; Markdown content should be semantically chunked to support RAG system; Writing style optimized for AI consumption and retrieval
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Clear, Developer-Focused Explanations
+All technical content must be clearly explained with practical examples; Focus on developer usability and understanding; Complex concepts broken down into digestible, actionable information
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Reproducible Architecture and Code
+All technical implementations must be reproducible with clear documentation; Clean, production-ready code; Architecture decisions documented and justified
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Modular, Semantic Content Structure
+Content written in modular, semantically chunked Markdown; Clear separation of content, infrastructure, and AI logic; Consistent terminology and structure
 
-### [PRINCIPLE_6_NAME]
+### Source-Grounded Responses
+RAG chatbot answers only from book content with citations or section references included in responses; Strict adherence to book content without external sources
 
 
-[PRINCIPLE__DESCRIPTION]
+## Technical Stack and Infrastructure Requirements
+Docusaurus for book deployment on GitHub Pages; FastAPI backend for RAG system; OpenAI Agents/ChatKit SDK for AI interactions; Qdrant Cloud for vector database; Neon Serverless PostgreSQL for data storage
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Development Workflow and Quality Standards
+All changes must maintain zero hallucination tolerance; Code must follow clean, production-ready standards; Content must be optimized for vector retrieval; Quality gates include accuracy verification and build/deployment validation
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+All implementations must adhere to the core principles of accuracy, AI-native optimization, and developer focus; PRs must verify compliance with quality standards; Architecture decisions must support reproducible and modular design
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-01-02 | **Last Amended**: 2026-01-02
